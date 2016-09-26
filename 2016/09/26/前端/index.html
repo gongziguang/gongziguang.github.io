@@ -3,17 +3,36 @@
 <head>
     <meta charset="utf-8">
     
-    <title>标签: laravel php | Blog</title>
+    <title>前端 | Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://gongziguang.github.io/tags/laravel-php/index.html">
+    <meta name="description" content="面试了几家公司，去了之后一般会先笔试，出的题目虽然不同，但是考察的知识点却相似，趁着记忆还在，把它们梳理总结一下：
+去重去重，除去重复元素，一般会考察数组和字符串去重
+首先，数组去重：
+方法一：
+Array.prototype.unique1 = function(){
+    var temp = [];
+    for(var i=0,len=arr.length;i&amp;lt;len;i++){">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端">
+<meta property="og:url" content="http://gongziguang.github.io/2016/09/26/前端/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="blog">
+<meta property="og:description" content="面试了几家公司，去了之后一般会先笔试，出的题目虽然不同，但是考察的知识点却相似，趁着记忆还在，把它们梳理总结一下：
+去重去重，除去重复元素，一般会考察数组和字符串去重
+首先，数组去重：
+方法一：
+Array.prototype.unique1 = function(){
+    var temp = [];
+    for(var i=0,len=arr.length;i&amp;lt;len;i++){">
+<meta property="og:updated_time" content="2016-09-26T13:15:55.659Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog">
-<meta name="twitter:description" content="blog">
+<meta name="twitter:title" content="前端">
+<meta name="twitter:description" content="面试了几家公司，去了之后一般会先笔试，出的题目虽然不同，但是考察的知识点却相似，趁着记忆还在，把它们梳理总结一下：
+去重去重，除去重复元素，一般会考察数组和字符串去重
+首先，数组去重：
+方法一：
+Array.prototype.unique1 = function(){
+    var temp = [];
+    for(var i=0,len=arr.length;i&amp;lt;len;i++){">
     
 
     
@@ -204,45 +223,262 @@
 </aside>
 
             
-            <section id="main">
-<div class="timeline timeline-wrap">
-    <div class="timeline-row timeline-row-major">
-        <span class="node"><i class="fa fa-tag"></i></span>
-        <h1 class="title">#laravel php</h1>
-    </div>
-    
-        <div class="timeline-row">
-            <span class="node"></span>
-            <div class="content">
+            <section id="main"><article id="post-前端" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="timeline-article-title" href="/2016/09/22/laravel学习笔记/">laravel学习笔记</a>
+        <h1 class="article-title" itemprop="name">
+            前端
         </h1>
     
 
-                <div class="article-meta">
-                    
+                
+                    <div class="article-meta">
+                        
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/22/laravel学习笔记/">
-            <time datetime="2016-09-21T23:36:55.000Z" itemprop="datePublished">2016-09-22</time>
+        <a href="/2016/09/26/前端/">
+            <time datetime="2016-09-26T06:15:40.000Z" itemprop="datePublished">2016-09-26</time>
         </a>
     </div>
 
 
-                    
-                    
+                        
+                        
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/laravel-php/">laravel php</a>
+        <a class="tag-link" href="/tags/面试/">面试</a>
     </div>
 
-                </div>
-            </div>
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>面试了几家公司，去了之后一般会先笔试，出的题目虽然不同，但是考察的知识点却相似，趁着记忆还在，把它们梳理总结一下：</p>
+<h2 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h2><p>去重，除去重复元素，一般会考察数组和字符串去重</p>
+<p>首先，数组去重：</p>
+<p>方法一：</p>
+<pre><code>Array.prototype.unique1 = function(){
+    var temp = [];
+    for(var i=0,len=arr.length;i&lt;len;i++){
+        if(temp.indexOf(arr[i])===-1){
+            temp.push(arr[i]);
+        }
+    }
+    return temp;
+}
+</code></pre><p>这种去重方式，简单容易想到，但是因为每次都用到indexOf，效率比较差，所以需要优化</p>
+<p>方法二：</p>
+<pre><code>Array.prototype.unique2 = function(){
+    arr.sort();
+    var temp[0] = arr[0];
+    for(var i=1,len=arr.length;i&lt;len;i++){
+        if(arr[i] !== temp[temp.length-1]){
+            temp.push(arr[i]);
+        }
+    }
+}
+</code></pre><p>字符串去重：</p>
+<p>方法一：字符串转成数组，然后用数组去重，最后将数组合并层字符串<br>用到的字符串方法：string.split(“”)，array.join(“”);</p>
+<p>方法二：正则表达式<br>“example”.replace(/(.)(?=*\1)/g,””)</p>
+<p>##统计重复数最多的元素及个数</p>
+<pre><code>function numberOfRepeat(obj){
+    //对数组元素计数
+    var s={};
+    for(var i=0,len=obj.length;i&lt;len;i++){
+        if(s.hasOwnProperty(obj[i])){
+            s[obj[i]] +=1;            
+        }else{
+            s[obj[i]] = 1;
+        }
+    }
+    //将对象转成二维数组
+    var arr = [];
+    for(x in s){
+        arr.push([x,s[x]])
+    }
+    //对二维数组排序
+    arr.sort(function(a,b){
+        return b[1]-a[1];
+    })
+    return arr[0]
+}
+</code></pre><p>##类型判断</p>
+<ul>
+<li>typeOf() <ul>
+<li>可识别标准类型（null除外），number、string、function、undefined</li>
+<li>不能识别具体的对象类型（function除外）</li>
+</ul>
+</li>
+<li>Object.prototype.toString.call() <ul>
+<li>一般封装成函数<br>function type(obj){return Object.prototype.toString.call(obj).slice(8,-1);}</li>
+</ul>
+</li>
+<li>instanceof<ul>
+<li>可判别内置对象类型</li>
+<li>可判别自定义类型</li>
+<li>不能判别原始类型</li>
+</ul>
+</li>
+<li>constructor<ul>
+<li>可判别标准类型（undefined，null除外）</li>
+<li>可判别内置对象类型</li>
+<li>可判别自定义对象类型</li>
+</ul>
+</li>
+</ul>
+<p>##日期格式化<br>将日期按“YYYY-MM-DD hh:mm:ss”格式输出</p>
+<pre><code>/**
+ * [format 日期格式化输出]
+ * &quot;YYYY-MM-DD hh:mm:ss&quot;
+ * @param  {[Date]} date    日期
+ * @param  {[String]} pattern 输出格式
+ *
+ * @return {[String]}         
+ */
+function format(date,pattern){
+    var padding0=function(num){
+        if(num&lt;10){
+            num=&quot;0&quot;+num
+        }
+        return num;
+    }
+    var txt = {
+        &apos;YYYY&apos;:date.getFullYear(),
+        &apos;MM&apos;:padding0(date.getMonth()+1),
+        &apos;DD&apos;:padding0(date.getDate()),
+        &apos;hh&apos;:padding0(date.getHours()),
+        &apos;mm&apos;:padding0(date.getMinutes()),
+        &apos;ss&apos;:padding0(date.getSeconds())
+    }
+    return pattern.replace(/([a-z])(\1)*/ig,function(match){
+        return txt[match]
+    })
+}
+</code></pre><p>##callee和caller的区别<br>caller指向的是调用函数本身的那个函数，应用场景：主要用于查看函数本身被哪个函数调用</p>
+<p>callee是arguments的一个属性，标识函数对象本身的引用，应用场景：一般用于匿名函数</p>
+<p>##正则表达式<br>正则是我的弱项，掌握的不是很好，待补充。//TODO</p>
+<p>##主流浏览器的内核有哪些？<br>Trident:IE浏览器的内核</p>
+<p>Webkit:Chrome,Safari</p>
+<p>Gecko:Firefox</p>
+
+        
         </div>
-    
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
 </div>
+
+    <a data-url="http://gongziguang.github.io/2016/09/26/前端/" data-id="citk2v374000034fv2dyvqybp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://gongziguang.github.io/2016/09/26/前端/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://gongziguang.github.io/2016/09/26/前端/">评论</a>
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/09/22/laravel学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">laravel学习笔记</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
 </section>
             
                 <aside id="sidebar">
@@ -358,11 +594,13 @@
     <script>
     var disqus_config = function () {
         
-        this.page.identifier = 'undefined';
+            this.page.url = 'http://gongziguang.github.io/2016/09/26/前端/';
+        
+        this.page.identifier = '前端';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/count.js';
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
