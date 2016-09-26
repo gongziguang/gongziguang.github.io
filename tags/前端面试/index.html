@@ -3,39 +3,17 @@
 <head>
     <meta charset="utf-8">
     
-    <title>laravel学习笔记 | Blog</title>
+    <title>标签: 前端面试 | Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="laravel学习笔记composer的安装composer是php包管理工具,类似npm 与 nodejs
-
-composer的安装-&amp;gt; 如何安装composer
-设置中国镜像站，由于中国网络的限制，安装一些包可能速度比较慢
-
-在命令行中执行如下命令：
-
-composer config -g repo.packagist composer https://packagist.phpcomp">
-<meta property="og:type" content="article">
-<meta property="og:title" content="laravel学习笔记">
-<meta property="og:url" content="http://gongziguang.github.io/2016/09/22/laravel学习笔记/index.html">
+    <meta name="description" content="blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="http://gongziguang.github.io/tags/前端面试/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="laravel学习笔记composer的安装composer是php包管理工具,类似npm 与 nodejs
-
-composer的安装-&amp;gt; 如何安装composer
-设置中国镜像站，由于中国网络的限制，安装一些包可能速度比较慢
-
-在命令行中执行如下命令：
-
-composer config -g repo.packagist composer https://packagist.phpcomp">
-<meta property="og:updated_time" content="2016-09-22T01:41:31.047Z">
+<meta property="og:description" content="blog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="laravel学习笔记">
-<meta name="twitter:description" content="laravel学习笔记composer的安装composer是php包管理工具,类似npm 与 nodejs
-
-composer的安装-&amp;gt; 如何安装composer
-设置中国镜像站，由于中国网络的限制，安装一些包可能速度比较慢
-
-在命令行中执行如下命令：
-
-composer config -g repo.packagist composer https://packagist.phpcomp">
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="blog">
     
 
     
@@ -226,265 +204,45 @@ composer config -g repo.packagist composer https://packagist.phpcomp">
 </aside>
 
             
-            <section id="main"><article id="post-laravel学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
+            <section id="main">
+<div class="timeline timeline-wrap">
+    <div class="timeline-row timeline-row-major">
+        <span class="node"><i class="fa fa-tag"></i></span>
+        <h1 class="title">#前端面试</h1>
+    </div>
+    
+        <div class="timeline-row">
+            <span class="node"></span>
+            <div class="content">
                 
     
-        <h1 class="article-title" itemprop="name">
-            laravel学习笔记
+        <h1 itemprop="name">
+            <a class="timeline-article-title" href="/2016/09/26/前端面试小结/">前端面试小结</a>
         </h1>
     
 
-                
-                    <div class="article-meta">
-                        
+                <div class="article-meta">
+                    
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2016/09/22/laravel学习笔记/">
-            <time datetime="2016-09-21T23:36:55.000Z" itemprop="datePublished">2016-09-22</time>
+        <a href="/2016/09/26/前端面试小结/">
+            <time datetime="2016-09-26T06:15:40.000Z" itemprop="datePublished">2016-09-26</time>
         </a>
     </div>
 
 
-                        
-                        
+                    
+                    
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/laravel-php/">laravel php</a>
+        <a class="tag-link" href="/tags/前端面试/">前端面试</a>
     </div>
 
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h2 id="laravel学习笔记"><a href="#laravel学习笔记" class="headerlink" title="laravel学习笔记"></a>laravel学习笔记</h2><h3 id="composer的安装"><a href="#composer的安装" class="headerlink" title="composer的安装"></a>composer的安装</h3><p>composer是php包管理工具,类似npm 与 nodejs</p>
-<ol>
-<li>composer的安装-&gt; <a href="http://pkg.phpcomposer.com/#how-to-install-composer" target="_blank" rel="external">如何安装composer</a></li>
-<li>设置中国镜像站，由于中国网络的限制，安装一些包可能速度比较慢</li>
-</ol>
-<p>在命令行中执行如下命令：</p>
-<blockquote>
-<p>composer config -g repo.packagist composer <a href="https://packagist.phpcomposer.com" target="_blank" rel="external">https://packagist.phpcomposer.com</a></p>
-</blockquote>
-<p>3.一些常用命令</p>
-<blockquote>
-<p>composer selfupdate 更新composer到最新版</p>
-<p>composer install 安装包</p>
-<p>composer update 升级包</p>
-</blockquote>
-<h3 id="laravel安装"><a href="#laravel安装" class="headerlink" title="laravel安装"></a>laravel安装</h3><p>方法1：</p>
-<blockquote>
-<p>composer global require “laravel/installer=~1.1”</p>
-<p>laravel new projectname</p>
-</blockquote>
-<p>方法2：</p>
-<blockquote>
-<p>composer create-project laravel/laravel –prefer-dist</p>
-</blockquote>
-<h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p>1.打开根目录下.env文件，设置数据库参数</p>
-<p>2.设置config/database.php 参数</p>
-<h3 id="artisan命令行工具"><a href="#artisan命令行工具" class="headerlink" title="artisan命令行工具"></a>artisan命令行工具</h3><p>artisan 是laravel内置的命令行接口</p>
-<p>常用命令:</p>
-<p>php artisan –version  查看artisan版本</p>
-<p>php artisan list 查看所有artisan命令</p>
-<p>php artisan help migrate 查看某个命令的帮助</p>
-<h3 id="Migration数据迁移"><a href="#Migration数据迁移" class="headerlink" title="Migration数据迁移"></a>Migration数据迁移</h3><ol>
-<li>建立文件 php artisan make:migration create_users_table –create=users</li>
-<li>迁移文件会建立在database/migrations目录下，打开刚建立的文件，增加需要的字段</li>
-<li>执行迁移 php artisan migrate</li>
-</ol>
-<p>####回滚迁移<br>回滚上一次的迁移 php artisan migrate:rollback</p>
-<p>回滚所有迁移 php artisan migrate:reset</p>
-<p>回滚所有迁移并且再执行一遍 php artisan migrate:refresh</p>
-<h3 id="生成-Eloquent-模型"><a href="#生成-Eloquent-模型" class="headerlink" title="生成 Eloquent 模型"></a>生成 Eloquent 模型</h3><p>php artisan make:model User</p>
-<p>注意：若没有特别指定，系统会默认自动对应【model小写的复数形态】的数据表，例如User会自动对应users表。也可以自定义，方法如下：</p>
-<pre><code>class User extends Model{
-    protected $table = &apos;my_users&apos;;
-} 
-</code></pre><p>一些常用数据库操作：</p>
-<pre><code>User::all()取出所有数据
-$user = User::find(&apos;id&apos;)根据主键取出一条数据
-User::where(&apos;username&apos;,$username)
-$user-&gt;save()更新模型
-$user-&gt;delete()删除模型
-$user-&gt;touch()更新时间戳
-</code></pre><p>###数据表关联<br>数据库表可能与其他的表相关联，关系一般为以下几种</p>
-<ul>
-<li>一对一</li>
-<li>一对多</li>
-<li>多对多</li>
-<li>远层一对多关联</li>
-<li>多态关联</li>
-<li>多态的多对多关联</li>
-</ul>
-<p>####一对一<br>在user的模型中定义answer</p>
-<pre><code>class User extends Model{
-  public function answer(){
-    return $this-&gt;hasOne(&apos;App\Answer&apos;);
-  }
-}
-</code></pre><p>在answer模型中定义user</p>
-<pre><code>class Answer extends Model{
-  public function user(){
-    return $this-&gt;belongsTo(&apos;App\User&apos;);
-  }
-}
-</code></pre><p>####一对多<br>一对多的例子如Blog中的评论</p>
-<pre><code>class Post extends Model {
-    public function comments()
-    {
-        return $this-&gt;hasMany(&apos;App\Comment&apos;);
-    }
-}
-</code></pre><p>在评论Comment中定义</p>
-<pre><code>class Comment extends Model {
-
-    public function post()
-    {
-        return $this-&gt;belongsTo(&apos;App\Post&apos;);
-    }
-
-}
-</code></pre><p>###多对多<br>在user中定义模型</p>
-<pre><code>class User extends Model {
-
-    public function roles()
-    {
-        return $this-&gt;belongsToMany(&apos;App\Role&apos;);
-    }
-
-}
-</code></pre><p>在role中定义</p>
-<pre><code>class Role extends Model {
-
-    public function users()
-    {
-        return $this-&gt;belongsToMany(&apos;App\User&apos;);
-    }
-
-}
-</code></pre>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://gongziguang.github.io/2016/09/22/laravel学习笔记/" data-id="citk2ybhu0001p4fvyv8lfu7n" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://gongziguang.github.io/2016/09/22/laravel学习笔记/#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://gongziguang.github.io/2016/09/22/laravel学习笔记/">评论</a>
-    
-
-        </footer>
-    </div>
-    
-        
-<nav id="article-nav">
-    
-        <a href="/2016/09/26/前端面试小结/" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    前端面试小结
-                
+                </div>
             </div>
-        </a>
+        </div>
     
-    
-</nav>
-
-
-    
-</article>
-
-
-    
-    <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-    
-    </section>
-
+</div>
 </section>
             
                 <aside id="sidebar">
@@ -600,13 +358,11 @@ $user-&gt;touch()更新时间戳
     <script>
     var disqus_config = function () {
         
-            this.page.url = 'http://gongziguang.github.io/2016/09/22/laravel学习笔记/';
-        
-        this.page.identifier = 'laravel学习笔记';
+        this.page.identifier = 'undefined';
     };
     (function() { 
         var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
+        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/count.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
